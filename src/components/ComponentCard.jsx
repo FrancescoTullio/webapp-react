@@ -15,9 +15,9 @@ function ComponetCard({ film }) {
             {film.title} <br /> {film.author}
           </h5>
           <p className="card-text">${film.abstract}</p>
-          <a href="#" className="btn btn-primary">
-            Mostra dettagli
-          </a>
+          <Link className="btn btn-primary" to={`/films/${film.slug}`}>
+          Mostra dettagli
+        </Link>
         </div>
       </div>
     );
